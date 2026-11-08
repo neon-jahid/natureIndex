@@ -1,0 +1,92 @@
+{
+  "status": {
+    "EX": { "name": "Extinct", "description": "No known individuals remain." },
+    "EW": { "name": "Extinct in the Wild", "description": "Survives only in captivity or cultivation." },
+    "CR": { "name": "Critically Endangered", "description": "Extremely high risk of extinction in the wild." },
+    "EN": { "name": "Endangered", "description": "Very high risk of extinction in the wild." },
+    "VU": { "name": "Vulnerable", "description": "High risk of extinction in the wild." },
+    "NT": { "name": "Near Threatened", "description": "Likely to become threatened in the near future." },
+    "LC": { "name": "Least Concern", "description": "Widespread and abundant; lowest risk." },
+    "DD": { "name": "Data Deficient", "description": "Not enough information to assess risk." },
+    "NE": { "name": "Not Evaluated", "description": "Not yet assessed against the IUCN criteria." }
+  },
+  "trend": {
+    "increasing": "Increasing",
+    "decreasing": "Decreasing",
+    "stable": "Stable",
+    "unknown": "Unknown"
+  },
+  "threatened": "Threatened",
+  "threatenedHelp": "Threatened = Critically Endangered, Endangered or Vulnerable",
+  "dashboard": {
+    "title": "Conservation Dashboard",
+    "subtitle": "How are species faring? Explore conservation status, threats and population trends — with every source clearly shown.",
+    "cards": {
+      "inDatabase": "Species in NatureIndex",
+      "threatenedInDb": "Threatened in NatureIndex",
+      "globalThreatened": "Threatened species worldwide",
+      "globalAssessed": "of {{num}} assessed by IUCN",
+      "lpi": "Average decline in monitored wildlife since 1970",
+      "decreasing": "Species with decreasing populations"
+    },
+    "statusChart": {
+      "title": "Conservation status distribution",
+      "subtitle": "IUCN categories of species in the NatureIndex database"
+    },
+    "categoryChart": {
+      "title": "Threatened species by category",
+      "subtitle": "Species in each category that are Vulnerable, Endangered or Critically Endangered",
+      "threatened": "Threatened",
+      "notThreatened": "Not threatened / not assessed",
+      "axisCategory": "Category",
+      "axisSpecies": "Number of species"
+    },
+    "trendChart": {
+      "title": "Population trend directions",
+      "subtitle": "Current IUCN population trend of species in NatureIndex"
+    },
+    "tigerChart": {
+      "title": "Tiger recovery: official population estimates",
+      "subtitle": "Royal Bengal Tiger counts in India and the Bangladesh Sundarbans",
+      "india": "India",
+      "bangladesh": "Bangladesh (Sundarbans)",
+      "axisYear": "Year",
+      "axisCount": "Estimated tigers"
+    },
+    "pandaChart": {
+      "title": "Giant panda national surveys",
+      "subtitle": "Wild giant pandas counted in China's national surveys",
+      "panda": "Wild giant pandas",
+      "axisCount": "Estimated pandas"
+    },
+    "threatsChart": {
+      "title": "Major drivers of biodiversity loss",
+      "subtitle": "Relative importance of direct drivers (illustrative)",
+      "axisShare": "Relative share (%)",
+      "demo": "Demonstration data",
+      "demoNote": "Illustrative values based on the ranking of drivers in the IPBES Global Assessment (2019); not exact measurements."
+    },
+    "drivers": {
+      "landUse": "Land & sea use change",
+      "exploitation": "Direct exploitation (hunting, fishing, logging)",
+      "climate": "Climate change",
+      "pollution": "Pollution",
+      "invasive": "Invasive species",
+      "other": "Other drivers"
+    },
+    "endangeredList": {
+      "title": "Most threatened species in NatureIndex",
+      "subtitle": "Critically Endangered and Endangered species"
+    },
+    "source": "Source",
+    "dataFromDb": "Calculated from the NatureIndex database",
+    "awarenessTitle": "Why conservation matters",
+    "awareness": [
+      { "title": "Ecosystem services", "body": "Healthy ecosystems purify water, pollinate crops, protect coasts and store carbon — services worth trillions of dollars every year." },
+      { "title": "Bangladesh's natural shield", "body": "The Sundarbans mangroves reduce the impact of cyclones and storm surges for millions of people living along the coast." },
+      { "title": "Extinction is forever", "body": "Once a species is lost, its genes, its role in nature and its story are gone for good. Prevention is the only cure." },
+      { "title": "Conservation works", "body": "Protected areas, anti-poaching patrols and community stewardship have brought tigers, pandas and humpback whales back from the brink." }
+    ],
+    "legendTitle": "IUCN Red List categories"
+  }
+}

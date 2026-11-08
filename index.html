@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NatureIndex — a bilingual (English & বাংলা) encyclopedia of Earth's biodiversity: mammals, birds, plants, fungi, marine and freshwater life." />
+    <meta name="theme-color" content="#174C38" />
+    <meta property="og:title" content="NatureIndex – Nature & Biodiversity Database" />
+    <meta property="og:description" content="Discover the living world in English and বাংলা." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://upload.wikimedia.org" />
+    <title>NatureIndex – Nature & Biodiversity Database</title>
+    <script>
+      // Apply theme & language before first paint to avoid flashes.
+      try {
+        var s = JSON.parse(localStorage.getItem('natureindex-store') || '{}').state || {};
+        var theme = s.theme || 'system';
+        var dark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (dark) document.documentElement.classList.add('dark');
+        var lng = localStorage.getItem('natureindex-lang');
+        if (lng === 'bn') { document.documentElement.lang = 'bn'; document.documentElement.classList.add('lang-bn'); }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>NatureIndex requires JavaScript. / NatureIndex ব্যবহারের জন্য JavaScript চালু করুন।</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

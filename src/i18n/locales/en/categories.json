@@ -1,0 +1,56 @@
+{
+  "categories": {
+    "mammals": { "name": "Mammals", "description": "Warm-blooded animals that nurse their young — from tigers and elephants to whales and bats." },
+    "birds": { "name": "Birds", "description": "Feathered, egg-laying vertebrates that fill the skies, forests and wetlands with colour and song." },
+    "reptiles": { "name": "Reptiles", "description": "Scaly, cold-blooded survivors — crocodilians, snakes, lizards and turtles." },
+    "amphibians": { "name": "Amphibians", "description": "Frogs, toads and salamanders that live between water and land, and are sensitive indicators of a healthy environment." },
+    "fish": { "name": "Fish", "description": "Gill-breathing vertebrates of rivers and seas, from the hilsa to the giant whale shark." },
+    "insects": { "name": "Insects", "description": "The most diverse animals on Earth — pollinators, recyclers and food for countless other species." },
+    "plants": { "name": "Plants", "description": "Herbs, shrubs and medicinal plants that produce oxygen, food and traditional remedies." },
+    "trees": { "name": "Trees", "description": "Long-lived giants that store carbon, shelter wildlife and shape entire landscapes." },
+    "flowers": { "name": "Flowers", "description": "Flowering plants celebrated for their beauty, pollinators and cultural meaning." },
+    "fungi": { "name": "Fungi", "description": "Mushrooms, moulds and their hidden networks — nature's recyclers and partners of plants." },
+    "marine": { "name": "Marine Life", "description": "Life of oceans and coasts: whales, corals, dolphins, octopuses and more." },
+    "freshwater": { "name": "Freshwater Life", "description": "Species of rivers, lakes, ponds and floodplains — the lifeblood of Bangladesh." }
+  },
+  "habitats": {
+    "tropical-forest": { "name": "Tropical Forests", "description": "Warm, wet forests near the equator that hold more than half of all land species." },
+    "temperate-forest": { "name": "Temperate Forests", "description": "Forests with distinct seasons, home to deciduous and coniferous trees." },
+    "mangrove": { "name": "Mangrove Forests", "description": "Salt-tolerant coastal forests like the Sundarbans that protect shores from storms." },
+    "grassland": { "name": "Grasslands & Savannas", "description": "Open landscapes of grasses that support great herds and their predators." },
+    "wetland": { "name": "Wetlands", "description": "Haors, beels, marshes and swamps — nurseries for fish and refuges for migratory birds." },
+    "rivers-lakes": { "name": "Rivers & Lakes", "description": "Flowing and still freshwater systems that sustain fisheries, farms and wildlife." },
+    "ocean": { "name": "Open Ocean", "description": "The vast blue — Earth's largest habitat, from sunlit surface to the deep sea." },
+    "coral-reef": { "name": "Coral Reefs", "description": "Living underwater cities built by corals, sheltering a quarter of marine species." },
+    "desert": { "name": "Deserts & Drylands", "description": "Arid lands where life survives through remarkable adaptations." },
+    "mountain": { "name": "Mountains", "description": "High-altitude ecosystems from cloud forests to alpine meadows and snowfields." },
+    "polar": { "name": "Polar Regions", "description": "Frozen seas and ice sheets of the Arctic and Antarctic." },
+    "urban-farmland": { "name": "Farms, Villages & Cities", "description": "Human-shaped landscapes where wildlife and people share space." }
+  },
+  "regions": {
+    "south-asia": "South Asia",
+    "southeast-asia": "Southeast Asia",
+    "east-asia": "East Asia",
+    "africa": "Africa",
+    "europe": "Europe",
+    "north-america": "North America",
+    "south-america": "South America",
+    "oceania": "Oceania",
+    "polar": "Polar Regions",
+    "oceans": "World Oceans"
+  },
+  "page": {
+    "title": "Explore by Category",
+    "subtitle": "Twelve windows into the tree of life. Choose a group to see its species.",
+    "speciesCount": "{{num}} species",
+    "browse": "Browse {{name}}",
+    "inCategory": "Species in this category"
+  },
+  "habitatsPage": {
+    "title": "Explore Habitats",
+    "subtitle": "Every species depends on a home. Discover the ecosystems that sustain life — from the Sundarbans to the coral reefs.",
+    "speciesHere": "Species living here",
+    "viewOnMap": "View on map",
+    "noSpecies": "No species from this habitat are in the database yet."
+  }
+}

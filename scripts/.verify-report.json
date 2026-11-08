@@ -1,0 +1,428 @@
+{
+  "titleProblems": [
+    {
+      "id": "blobfish",
+      "file": "marine-reef-2.ts",
+      "wikiTitle": "Blobfish",
+      "problem": "disambiguation page"
+    }
+  ],
+  "statusMismatch": [
+    {
+      "id": "purple-frog",
+      "file": "amphibians-3.ts",
+      "ours": "EN",
+      "wikidata": "NT"
+    },
+    {
+      "id": "ceylon-caecilian",
+      "file": "amphibians-4.ts",
+      "ours": "LC",
+      "wikidata": "VU"
+    },
+    {
+      "id": "greater-adjutant",
+      "file": "birds-water-1.ts",
+      "ours": "EN",
+      "wikidata": "NT"
+    },
+    {
+      "id": "lesser-adjutant",
+      "file": "birds-water-1.ts",
+      "ours": "VU",
+      "wikidata": "NT"
+    },
+    {
+      "id": "black-headed-ibis",
+      "file": "birds-water-2.ts",
+      "ours": "NT",
+      "wikidata": "LC"
+    },
+    {
+      "id": "common-carp",
+      "file": "fish-freshwater-2.ts",
+      "ours": "VU",
+      "wikidata": "LC"
+    },
+    {
+      "id": "indian-mackerel",
+      "file": "fish-marine-1.ts",
+      "ours": "DD",
+      "wikidata": "LC"
+    },
+    {
+      "id": "swordfish",
+      "file": "fish-marine-2.ts",
+      "ours": "LC",
+      "wikidata": "NT"
+    },
+    {
+      "id": "night-flowering-jasmine",
+      "file": "flowers-asia-1.ts",
+      "ours": "NE",
+      "wikidata": "LC"
+    },
+    {
+      "id": "crape-jasmine",
+      "file": "flowers-asia-1.ts",
+      "ours": "NE",
+      "wikidata": "LC"
+    },
+    {
+      "id": "king-protea",
+      "file": "flowers-world-2.ts",
+      "ours": "NE",
+      "wikidata": "LC"
+    },
+    {
+      "id": "yangtze-finless-porpoise",
+      "file": "freshwater-mammals-1.ts",
+      "ours": "CR",
+      "wikidata": "EN"
+    },
+    {
+      "id": "common-rose",
+      "file": "insects-lepidoptera-1.ts",
+      "ours": "NE",
+      "wikidata": "LC"
+    },
+    {
+      "id": "blue-pansy",
+      "file": "insects-lepidoptera-1.ts",
+      "ours": "NE",
+      "wikidata": "LC"
+    },
+    {
+      "id": "common-crow",
+      "file": "insects-lepidoptera-2.ts",
+      "ours": "NE",
+      "wikidata": "LC"
+    },
+    {
+      "id": "european-stag-beetle",
+      "file": "insects-other-2.ts",
+      "ours": "NT",
+      "wikidata": "LC"
+    },
+    {
+      "id": "indian-flying-fox",
+      "file": "mammals-americas-2.ts",
+      "ours": "LC",
+      "wikidata": "NT"
+    },
+    {
+      "id": "antarctic-krill",
+      "file": "marine-invertebrates-2.ts",
+      "ours": "NE",
+      "wikidata": "LC"
+    },
+    {
+      "id": "sago-cycad",
+      "file": "plants-notable-1.ts",
+      "ours": "NT",
+      "wikidata": "LC"
+    },
+    {
+      "id": "spanish-moss",
+      "file": "plants-notable-1.ts",
+      "ours": "NE",
+      "wikidata": "LC"
+    },
+    {
+      "id": "giant-dodder",
+      "file": "plants-notable-2.ts",
+      "ours": "NE",
+      "wikidata": "LC"
+    },
+    {
+      "id": "turmeric",
+      "file": "plants-useful-1.ts",
+      "ours": "NE",
+      "wikidata": "DD"
+    },
+    {
+      "id": "ginger",
+      "file": "plants-useful-1.ts",
+      "ours": "NE",
+      "wikidata": "DD"
+    },
+    {
+      "id": "maize",
+      "file": "plants-useful-1.ts",
+      "ours": "NE",
+      "wikidata": "LC"
+    },
+    {
+      "id": "bengal-monitor",
+      "file": "reptiles-squamates-2.ts",
+      "ours": "LC",
+      "wikidata": "NT"
+    },
+    {
+      "id": "indian-flapshell-turtle",
+      "file": "reptiles-turtles-croc-2.ts",
+      "ours": "LC",
+      "wikidata": "VU"
+    },
+    {
+      "id": "alligator-snapping-turtle",
+      "file": "reptiles-turtles-croc-2.ts",
+      "ours": "VU",
+      "wikidata": "EN"
+    },
+    {
+      "id": "green-sea-turtle",
+      "file": "reptiles.ts",
+      "ours": "EN",
+      "wikidata": "LC"
+    },
+    {
+      "id": "sal-tree",
+      "file": "trees-asia-1.ts",
+      "ours": "LC",
+      "wikidata": "NT"
+    }
+  ],
+  "taxonMismatch": [
+    {
+      "id": "catla",
+      "file": "fish-freshwater-1.ts",
+      "ours": "Labeo catla",
+      "wikidata": "Catla",
+      "resolvedTitle": "Catla"
+    },
+    {
+      "id": "chinese-hibiscus",
+      "file": "flowers-asia-1.ts",
+      "ours": "Hibiscus rosa-sinensis",
+      "wikidata": "Hibiscus × rosa-sinensis",
+      "resolvedTitle": "Hibiscus × rosa-sinensis"
+    },
+    {
+      "id": "rafflesia",
+      "file": "flowers.ts",
+      "ours": "Rafflesia arnoldii",
+      "wikidata": "Rafflesia arnoldi",
+      "resolvedTitle": "Rafflesia arnoldii"
+    },
+    {
+      "id": "lamellidens-freshwater-mussel",
+      "file": "freshwater-inverts-1.ts",
+      "ours": "Lamellidens marginalis",
+      "wikidata": "Unionidae",
+      "resolvedTitle": "Unionidae"
+    },
+    {
+      "id": "asian-small-clawed-otter",
+      "file": "freshwater-mammals-1.ts",
+      "ours": "Aonyx cinereus",
+      "wikidata": "Aonyx cinerea",
+      "resolvedTitle": "Asian small-clawed otter"
+    },
+    {
+      "id": "giraffe",
+      "file": "mammals-afr-eur-1.ts",
+      "ours": "Giraffa camelopardalis",
+      "wikidata": "Giraffa",
+      "resolvedTitle": "Giraffe"
+    },
+    {
+      "id": "barking-deer",
+      "file": "mammals-asia-2.ts",
+      "ours": "Muntiacus muntjak",
+      "wikidata": "Muntiacus vaginalis",
+      "resolvedTitle": "Northern red muntjac"
+    },
+    {
+      "id": "brydes-whale",
+      "file": "marine-mammals-1.ts",
+      "ours": "Balaenoptera edeni",
+      "wikidata": "Balaenoptera brydei",
+      "resolvedTitle": "Bryde's whale"
+    },
+    {
+      "id": "reef-stonefish",
+      "file": "marine-reef-1.ts",
+      "ours": "Synanceia verrucosa",
+      "wikidata": "السمكة الصخرية المرجانية",
+      "resolvedTitle": "Synanceia verrucosa"
+    },
+    {
+      "id": "barreleye",
+      "file": "marine-reef-2.ts",
+      "ours": "Macropinna microstoma",
+      "wikidata": "Macropinna",
+      "resolvedTitle": "Macropinna"
+    },
+    {
+      "id": "welwitschia",
+      "file": "plants-notable-2.ts",
+      "ours": "Welwitschia mirabilis",
+      "wikidata": "Welwitschia",
+      "resolvedTitle": "Welwitschia"
+    },
+    {
+      "id": "tuatara",
+      "file": "reptiles-turtles-croc-1.ts",
+      "ours": "Sphenodon punctatus",
+      "wikidata": "Sphenodon",
+      "resolvedTitle": "Tuatara"
+    },
+    {
+      "id": "keora",
+      "file": "trees-asia-2.ts",
+      "ours": "Sonneratia apetala",
+      "wikidata": "Sonneratia",
+      "resolvedTitle": "Sonneratia"
+    },
+    {
+      "id": "wollemi-pine",
+      "file": "trees-world-2.ts",
+      "ours": "Wollemia nobilis",
+      "wikidata": "Wollemia",
+      "resolvedTitle": "Wollemia"
+    }
+  ],
+  "noStatusOnWikidata": [
+    {
+      "id": "american-bullfrog",
+      "ours": "LC"
+    },
+    {
+      "id": "barn-owl",
+      "ours": "LC"
+    },
+    {
+      "id": "sarus-crane",
+      "ours": "VU"
+    },
+    {
+      "id": "catla",
+      "ours": "LC"
+    },
+    {
+      "id": "orange-jasmine",
+      "ours": "LC"
+    },
+    {
+      "id": "azalea",
+      "ours": "LC"
+    },
+    {
+      "id": "madagascar-periwinkle",
+      "ours": "LC"
+    },
+    {
+      "id": "common-poppy",
+      "ours": "LC"
+    },
+    {
+      "id": "bird-of-paradise-flower",
+      "ours": "LC"
+    },
+    {
+      "id": "cornflower",
+      "ours": "LC"
+    },
+    {
+      "id": "common-bluebell",
+      "ours": "LC"
+    },
+    {
+      "id": "sacred-lotus",
+      "ours": "DD"
+    },
+    {
+      "id": "lamellidens-freshwater-mussel",
+      "ours": "LC"
+    },
+    {
+      "id": "asian-small-clawed-otter",
+      "ours": "VU"
+    },
+    {
+      "id": "golden-chanterelle",
+      "ours": "LC"
+    },
+    {
+      "id": "buff-tailed-bumblebee",
+      "ours": "LC"
+    },
+    {
+      "id": "african-leopard",
+      "ours": "VU"
+    },
+    {
+      "id": "giraffe",
+      "ours": "VU"
+    },
+    {
+      "id": "grizzly-bear",
+      "ours": "LC"
+    },
+    {
+      "id": "indian-leopard",
+      "ours": "VU"
+    },
+    {
+      "id": "brydes-whale",
+      "ours": "LC"
+    },
+    {
+      "id": "hawaiian-monk-seal",
+      "ours": "EN"
+    },
+    {
+      "id": "vampire-squid",
+      "ours": "LC"
+    },
+    {
+      "id": "common-bracken",
+      "ours": "LC"
+    },
+    {
+      "id": "water-hyacinth",
+      "ours": "LC"
+    },
+    {
+      "id": "welwitschia",
+      "ours": "LC"
+    },
+    {
+      "id": "tuatara",
+      "ours": "LC"
+    },
+    {
+      "id": "aldabra-giant-tortoise",
+      "ours": "VU"
+    },
+    {
+      "id": "indian-date-palm",
+      "ours": "LC"
+    },
+    {
+      "id": "kadam",
+      "ours": "LC"
+    },
+    {
+      "id": "arjuna",
+      "ours": "LC"
+    },
+    {
+      "id": "keora",
+      "ours": "LC"
+    },
+    {
+      "id": "olive",
+      "ours": "LC"
+    },
+    {
+      "id": "wollemi-pine",
+      "ours": "CR"
+    },
+    {
+      "id": "african-baobab",
+      "ours": "LC"
+    }
+  ]
+}

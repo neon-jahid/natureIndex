@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "eyebrow": "The bilingual biodiversity encyclopedia",
+    "title": "Discover the Living World.",
+    "subtitle": "Explore the incredible diversity of life on Earth.",
+    "exploreBtn": "Explore Species",
+    "discoverBtn": "Discover Nature",
+    "photoCaption": "The Sundarbans mangrove forest, Bangladesh",
+    "stats": {
+      "species": "Species profiles",
+      "categories": "Life categories",
+      "habitats": "Habitats",
+      "threatened": "Threatened species featured"
+    }
+  },
+  "categories": {
+    "eyebrow": "Tree of life",
+    "title": "Explore by Category",
+    "subtitle": "From the smallest fungi to the largest whale — choose a path into nature."
+  },
+  "featured": {
+    "eyebrow": "Editor's selection",
+    "title": "Featured Species",
+    "subtitle": "Remarkable lives from Bangladesh and around the world."
+  },
+  "endangered": {
+    "eyebrow": "Spotlight",
+    "title": "Endangered Species Spotlight",
+    "subtitle": "These species face a high risk of extinction in the wild. Knowing them is the first step to saving them.",
+    "cta": "See conservation dashboard"
+  },
+  "habitats": {
+    "eyebrow": "Ecosystems",
+    "title": "Explore Habitats",
+    "subtitle": "Mangroves, coral reefs, wetlands and mountains — every habitat is a world of its own.",
+    "cta": "All habitats"
+  },
+  "world": {
+    "eyebrow": "Atlas",
+    "title": "Explore the World",
+    "subtitle": "See where species live on an interactive biodiversity map — then zoom from the Sundarbans to the Great Barrier Reef.",
+    "cta": "Open the map",
+    "regions": "Regions represented"
+  },
+  "daily": {
+    "eyebrow": "Daily Species Discovery",
+    "title": "Species of the Day",
+    "subtitle": "A new species every day — come back tomorrow for another.",
+    "today": "Today · {{date}}",
+    "learn": "Learn about this species",
+    "random": "Surprise me"
+  },
+  "recent": {
+    "eyebrow": "Your journey",
+    "title": "Recently Explored",
+    "subtitle": "Pick up where you left off."
+  },
+  "awareness": {
+    "eyebrow": "Conservation Awareness",
+    "title": "Nature needs us now",
+    "body": "Wildlife populations we monitor have declined by an average of {{percent}} since 1970. Over {{threatened}} species assessed by the IUCN are threatened with extinction. But conservation works — Bangladesh's tiger count has been rising again.",
+    "source": "Sources: {{sources}}",
+    "tipsTitle": "What you can do",
+    "tips": [
+      "Never buy products made from wildlife — skins, shells, ivory or exotic pets.",
+      "Use less plastic: much of it ends up in our rivers and the Bay of Bengal.",
+      "Plant native trees and flowers to feed bees, butterflies and birds.",
+      "Respect the hilsa fishing ban seasons that let fish breed.",
+      "Share what you learn — awareness is the start of protection."
+    ],
+    "cta": "Explore the conservation dashboard"
+  },
+  "identify": {
+    "eyebrow": "Try it",
+    "title": "Saw something in nature?",
+    "body": "Upload a photo and try our identification prototype to explore possible matches.",
+    "cta": "Open species identification"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "appName": "NatureIndex",
+  "tagline": "Nature & Biodiversity Database",
+  "metaDescription": "NatureIndex is a bilingual encyclopedia of Earth's biodiversity — explore mammals, birds, plants, fungi, marine and freshwater life in English and Bengali.",
+  "actions": {
+    "search": "Search",
+    "clear": "Clear",
+    "clearAll": "Clear all",
+    "close": "Close",
+    "viewAll": "View all",
+    "viewDetails": "View details",
+    "explore": "Explore",
+    "back": "Back",
+    "share": "Share",
+    "copyLink": "Copy link",
+    "copyScientific": "Copy scientific name",
+    "print": "Print",
+    "favorite": "Add to favorites",
+    "unfavorite": "Remove from favorites",
+    "compare": "Compare",
+    "addCompare": "Add to comparison",
+    "removeCompare": "Remove from comparison",
+    "random": "Random species",
+    "retry": "Try again",
+    "goHome": "Back to home",
+    "readMore": "Read more",
+    "showLess": "Show less",
+    "remove": "Remove",
+    "previous": "Previous",
+    "next": "Next",
+    "filters": "Filters",
+    "applyFilters": "Show results",
+    "openOnWikipedia": "Open on Wikipedia"
+  },
+  "language": {
+    "label": "Language",
+    "switchTo": "Switch language to {{lang}}",
+    "en": "English",
+    "bn": "বাংলা"
+  },
+  "theme": {
+    "label": "Theme",
+    "toggle": "Change theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "toast": {
+    "addedFavorite": "Added to favorites",
+    "removedFavorite": "Removed from favorites",
+    "copied": "Copied to clipboard",
+    "linkCopied": "Link copied to clipboard",
+    "copyFailed": "Could not copy. Please copy manually.",
+    "compareFull": "You can compare up to {{max}} species at a time",
+    "addedCompare": "Added to comparison",
+    "removedCompare": "Removed from comparison",
+    "noteSaved": "Note saved"
+  },
+  "states": {
+    "loading": "Loading…",
+    "loadingSpecies": "Loading species…",
+    "errorTitle": "Something went wrong",
+    "errorBody": "An unexpected error occurred while showing this page. Please try again.",
+    "noImage": "Photograph unavailable",
+    "photoCredit": "Photo: Wikimedia Commons",
+    "offline": "Some photographs need an internet connection."
+  },
+  "search": {
+    "placeholder": "Search species — e.g. Tiger, বাঘ, Panthera tigris",
+    "label": "Search species",
+    "open": "Open search",
+    "noResults": "No species found for “{{query}}”",
+    "noResultsHint": "Try an English or Bengali common name, a scientific name or a category.",
+    "suggestions": "Suggestions",
+    "popular": "Popular searches",
+    "seeAll": "See all {{count}} results",
+    "keyboardHint": "Press / to search",
+    "results": "Results"
+  },
+  "pagination": {
+    "label": "Pagination",
+    "pageOf": "Page {{page}} of {{total}}"
+  },
+  "footer": {
+    "about": "A bilingual digital encyclopedia that helps people in Bangladesh and around the world explore, understand and protect Earth's biodiversity.",
+    "explore": "Explore",
+    "learn": "Learn",
+    "tools": "Tools",
+    "dataNote": "Species information compiled from public scientific sources including the IUCN Red List. Photographs are sourced from Wikimedia Commons under their respective licences.",
+    "rights": "© {{year}} NatureIndex. Built for education and conservation awareness.",
+    "madeFor": "Made with care for the living world · বাংলা ও English"
+  },
+  "about": {
+    "title": "About NatureIndex",
+    "subtitle": "A bilingual window into the living world.",
+    "missionTitle": "Our mission",
+    "mission": "NatureIndex makes reliable biodiversity knowledge accessible in both English and Bengali. We believe that people protect what they understand — and that understanding begins in one's own language.",
+    "whatTitle": "What you will find",
+    "what": [
+      "Detailed encyclopedia pages for animals, plants, fungi and aquatic life",
+      "Taxonomy, physical characteristics, habitat, behaviour and diet",
+      "IUCN conservation status, threats and conservation initiatives",
+      "Interactive distribution maps and a world biodiversity map",
+      "A conservation dashboard with clearly sourced statistics"
+    ],
+    "bilingualTitle": "Truly bilingual",
+    "bilingual": "Every page, button, chart and map is available in English and Bangladesh Bengali. Switch language at any time — your page, search and filters stay exactly where they were.",
+    "dataTitle": "Data & sources",
+    "data": "Conservation categories follow the IUCN Red List. Population figures come from official surveys where available. Statistics marked as demonstration data are illustrative and clearly labelled. Photographs are loaded from Wikimedia Commons.",
+    "privacyTitle": "Privacy first",
+    "privacy": "NatureIndex runs entirely in your browser. There are no accounts and no server. Your favorites, notes and preferences are stored only on your device.",
+    "disclaimerTitle": "A note on accuracy",
+    "disclaimer": "Information is provided for education. Medicinal uses are described as traditional knowledge and are not medical advice. Never eat wild mushrooms or plants based on an online description.",
+    "statsSpecies": "Species profiles",
+    "statsCategories": "Categories",
+    "statsLanguages": "Languages"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "This trail leads nowhere",
+    "body": "The page you are looking for may have moved, or perhaps it has gone extinct. Let's guide you back to familiar ground.",
+    "explore": "Explore species"
+  },
+  "favorites": {
+    "title": "My Collection",
+    "subtitle": "Your favorite species, personal notes and wildlife sightings — saved privately in this browser.",
+    "emptyTitle": "Your collection is empty",
+    "emptyBody": "Tap the heart on any species to save it here. Your collection stays on this device, even after you close the browser.",
+    "count": "{{num}} saved species",
+    "seenCount": "{{num}} seen in the wild",
+    "notePlaceholder": "Add a personal note — where you saw it, what you learned…",
+    "seen": "Seen in the wild",
+    "recentTitle": "Recently viewed",
+    "recentEmpty": "Species you open will appear here.",
+    "clearRecent": "Clear history",
+    "clearFavorites": "Clear collection",
+    "confirmClear": "Remove all species from your collection?",
+    "export": "Export list"
+  },
+  "compare": {
+    "title": "Compare Species",
+    "subtitle": "Place up to three species side by side to explore how they differ.",
+    "emptyTitle": "Nothing to compare yet",
+    "emptyBody": "Add species to the comparison from any species card or page, or pick them below.",
+    "add": "Add a species",
+    "choose": "Choose a species…",
+    "tray": "Comparison",
+    "trayCount": "{{num}} / {{max}} selected",
+    "open": "Compare now",
+    "attribute": "Attribute"
+  },
+  "random": {
+    "title": "Random discovery",
+    "another": "Discover another"
+  }
+}
