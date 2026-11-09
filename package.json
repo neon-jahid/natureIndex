@@ -13,6 +13,7 @@
     "index": "node scripts/build-index.mjs",
     "validate": "node scripts/validate-species.mjs",
     "fetch-images": "node scripts/fetch-images.mjs",
+    "upgrade-images": "node scripts/upgrade-images.mjs",
     "verify-data": "node scripts/verify-wikidata.mjs"
   },
   "dependencies": {
