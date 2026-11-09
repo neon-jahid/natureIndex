@@ -11,21 +11,31 @@ interface Props {
   /** Category id used for the illustrated fallback. */
   category?: string;
   size?: 'thumb' | 'large';
+  /** Rendered width hint; when set, sharper versions are offered for high-resolution slots. */
+  sizes?: string;
   className?: string;
   imgClassName?: string;
   eager?: boolean;
+}
+
+/** Baked 960px Wikimedia thumbnails can be re-requested wider; smaller originals have no `/960px-` path. */
+function wideSrcSet(url: string) {
+  if (!url.includes('/960px-')) return undefined;
+  return [960, 1280, 1920].map((w) => `${url.replace('/960px-', `/${w}px-`)} ${w}w`).join(', ');
 }
 
 /**
  * Lazy-loaded photograph with a skeleton while loading and an illustrated
  * fallback when no image can be shown (offline, missing or broken).
  */
-export function SpeciesImage({ wikiTitle, alt, category, size = 'thumb', className, imgClassName, eager }: Props) {
+export function SpeciesImage({ wikiTitle, alt, category, size = 'thumb', sizes, className, imgClassName, eager }: Props) {
   const { images, loading } = useSpeciesImage(wikiTitle);
   const [failed, setFailed] = useState(false);
+  const [wideFailed, setWideFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const { t } = useTranslation('common');
   const src = size === 'large' ? images?.large ?? images?.thumb : images?.thumb ?? images?.large;
+  const srcSet = sizes && src && !wideFailed ? wideSrcSet(src) : undefined;
   const cat = category ? getCategory(category) : undefined;
 
   const showFallback = !loading && (!src || failed);
@@ -49,13 +59,15 @@ export function SpeciesImage({ wikiTitle, alt, category, size = 'thumb', classNa
       ) : (
         src && (
           <img
+            sizes={srcSet ? sizes : undefined}
+            srcSet={srcSet}
             src={src}
             alt={alt}
             loading={eager ? 'eager' : 'lazy'}
             decoding="async"
             referrerPolicy="no-referrer"
             onLoad={() => setLoaded(true)}
-            onError={() => setFailed(true)}
+            onError={() => (srcSet ? setWideFailed(true) : setFailed(true))}
             className={cn('h-full w-full object-cover transition-all duration-700', loaded ? 'opacity-100' : 'opacity-0', imgClassName)}
           />
         )

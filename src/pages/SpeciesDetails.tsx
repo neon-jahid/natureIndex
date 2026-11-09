@@ -151,11 +151,12 @@ function Details({ s }: { s: Species }) {
       </div>
 
       {/* Hero */}
-      <header className="relative overflow-hidden bg-forest-900 text-white">
-        <SpeciesImage wikiTitle={s.wikiTitle} alt={t('details.photoOf', { name })} category={s.category} size="large" eager className="absolute inset-0 opacity-90" />
-        <div className="absolute inset-0 bg-gradient-to-t from-forest-900 via-forest-900/60 to-black/20" />
-        <div className="container relative flex min-h-[26rem] flex-col justify-end pb-10 pt-24 sm:min-h-[32rem]">
-          <nav aria-label={t('navigation:breadcrumb')} className="no-print mb-auto flex flex-wrap items-center gap-1 text-sm text-white/75">
+      <SpeciesHero
+        wikiTitle={s.wikiTitle}
+        alt={t('details.photoOf', { name })}
+        category={s.category}
+        breadcrumb={
+          <nav aria-label={t('navigation:breadcrumb')} className="no-print mb-5 flex flex-wrap items-center gap-1 text-sm text-white/75 lg:mb-8">
             <Link to="/" className="hover:text-white">
               {t('navigation:home')}
             </Link>
@@ -172,31 +173,32 @@ function Details({ s }: { s: Species }) {
               {name}
             </span>
           </nav>
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <div className="mb-4 flex flex-wrap items-center gap-2">
-              <ConservationBadge status={s.conservation.status} />
-              {cats.map((c) => (
-                <Link key={c} to={`/categories/${c}`} className="inline-flex items-center gap-1 rounded-full bg-white/15 px-2.5 py-0.5 text-xs font-medium backdrop-blur-md hover:bg-white/25">
-                  <Icon name={getCategory(c)?.icon ?? 'Leaf'} className="h-3 w-3" />
-                  {t(`categories:categories.${c}.name`)}
-                </Link>
-              ))}
-            </div>
-            <h1 className="font-display text-4xl font-extrabold tracking-tight sm:text-6xl">{name}</h1>
-            <p className="mt-2 text-xl text-white/80">{otherName}</p>
-            <p className="mt-1 flex items-center gap-1 text-lg text-lime">
-              <span className="sci">{s.scientificName}</span>
-              <CopyScientificButton name={s.scientificName} className="no-print" />
-            </p>
-          </motion.div>
-          <div className="no-print mt-6 flex flex-wrap gap-2">
-            <FavoriteButton id={s.id} variant="full" className="bg-white text-forest-800 hover:bg-white/90 aria-pressed:bg-lime" />
-            <CompareButton id={s.id} variant="full" className="border-white/30 bg-white/10 text-white hover:bg-white/20" />
-            <ShareButton species={s} className="border-white/30 bg-white/10 text-white hover:bg-white/20" />
-            <PrintButton className="border-white/30 bg-white/10 text-white hover:bg-white/20" />
+        }
+      >
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+          <div className="mb-4 flex flex-wrap items-center gap-2">
+            <ConservationBadge status={s.conservation.status} />
+            {cats.map((c) => (
+              <Link key={c} to={`/categories/${c}`} className="inline-flex items-center gap-1 rounded-full bg-white/15 px-2.5 py-0.5 text-xs font-medium backdrop-blur-md hover:bg-white/25">
+                <Icon name={getCategory(c)?.icon ?? 'Leaf'} className="h-3 w-3" />
+                {t(`categories:categories.${c}.name`)}
+              </Link>
+            ))}
           </div>
+          <h1 className="break-words font-display text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl">{name}</h1>
+          <p className="mt-2 text-xl text-white/80">{otherName}</p>
+          <p className="mt-1 flex items-center gap-1 text-lg text-lime">
+            <span className="sci">{s.scientificName}</span>
+            <CopyScientificButton name={s.scientificName} className="no-print" />
+          </p>
+        </motion.div>
+        <div className="no-print mt-6 flex flex-wrap gap-2">
+          <FavoriteButton id={s.id} variant="full" className="bg-white text-forest-800 hover:bg-white/90 aria-pressed:bg-lime" />
+          <CompareButton id={s.id} variant="full" className="border-white/30 bg-white/10 text-white hover:bg-white/20" />
+          <ShareButton species={s} className="border-white/30 bg-white/10 text-white hover:bg-white/20" />
+          <PrintButton className="border-white/30 bg-white/10 text-white hover:bg-white/20" />
         </div>
-      </header>
+      </SpeciesHero>
 
       <div className="container grid gap-10 lg:grid-cols-[220px_1fr]">
         {/* Jump nav */}
@@ -384,18 +386,37 @@ function Details({ s }: { s: Species }) {
   );
 }
 
+/** Cover section: framed photo above the text on mobile, beside it from `lg` up. */
+function SpeciesHero({ wikiTitle, alt, category, breadcrumb, children }: { wikiTitle: string; alt: string; category: string; breadcrumb?: ReactNode; children: ReactNode }) {
+  return (
+    <header className="bg-gradient-to-br from-forest-700 via-forest-900 to-forest-900 text-white">
+      <div className="container pb-10 pt-6 lg:pb-16 lg:pt-8">
+        {breadcrumb}
+        <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
+          <div className="order-last min-w-0 lg:order-first">{children}</div>
+          <SpeciesImage
+            wikiTitle={wikiTitle}
+            alt={alt}
+            category={category}
+            size="large"
+            sizes="(min-width: 1320px) 620px, (min-width: 1024px) 48vw, 100vw"
+            eager
+            className="aspect-[4/3] w-full rounded-2xl shadow-2xl ring-1 ring-white/10 lg:rounded-3xl"
+          />
+        </div>
+      </div>
+    </header>
+  );
+}
+
 function DetailsSkeleton({ summary }: { summary: SpeciesSummary }) {
   const { l } = useLang();
   return (
     <div aria-busy="true">
-      <header className="relative overflow-hidden bg-forest-900 text-white">
-        <SpeciesImage wikiTitle={summary.wikiTitle} alt={l(summary.commonName)} category={summary.category} size="large" eager className="absolute inset-0 opacity-90" />
-        <div className="absolute inset-0 bg-gradient-to-t from-forest-900 via-forest-900/60 to-black/20" />
-        <div className="container relative flex min-h-[26rem] flex-col justify-end pb-10 pt-24 sm:min-h-[32rem]">
-          <h1 className="font-display text-4xl font-extrabold tracking-tight sm:text-6xl">{l(summary.commonName)}</h1>
-          <p className="sci mt-2 text-lg text-lime">{summary.scientificName}</p>
-        </div>
-      </header>
+      <SpeciesHero wikiTitle={summary.wikiTitle} alt={l(summary.commonName)} category={summary.category}>
+        <h1 className="break-words font-display text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl">{l(summary.commonName)}</h1>
+        <p className="sci mt-2 text-lg text-lime">{summary.scientificName}</p>
+      </SpeciesHero>
       <div className="container space-y-4 py-10 lg:pl-[260px]">
         <Skeleton className="h-8 w-48" />
         <Skeleton className="h-4 w-full" />
