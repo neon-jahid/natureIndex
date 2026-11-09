@@ -34,7 +34,7 @@ function SpeciesCardBase({ species: s, layout = 'grid', className, index = 0 }: 
         transition={{ duration: 0.35, delay: Math.min(index, 8) * 0.03 }}
         className={cn('group relative flex gap-4 rounded-2xl border bg-card p-3 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-lg sm:p-4', className)}
       >
-        <Link to={`/species/${s.id}`} className="absolute inset-0 z-0 rounded-2xl" aria-label={primaryName} />
+        <Link to={`/species/${s.id}`} className="absolute inset-0 z-[1] rounded-2xl" aria-label={primaryName} />
         <SpeciesImage wikiTitle={s.wikiTitle} alt={primaryName} category={s.category} className="h-24 w-24 shrink-0 rounded-xl sm:h-28 sm:w-36" />
         <div className="flex min-w-0 flex-1 flex-col">
           <div className="flex items-start justify-between gap-2">
@@ -73,7 +73,7 @@ function SpeciesCardBase({ species: s, layout = 'grid', className, index = 0 }: 
       transition={{ duration: 0.4, delay: Math.min(index, 8) * 0.04 }}
       className={cn('group relative flex flex-col overflow-hidden rounded-2xl border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl', className)}
     >
-      <Link to={`/species/${s.id}`} className="absolute inset-0 z-0" aria-label={primaryName} />
+      <Link to={`/species/${s.id}`} className="absolute inset-0 z-[1]" aria-label={primaryName} />
       <div className="relative aspect-[4/3] overflow-hidden">
         <SpeciesImage
           wikiTitle={s.wikiTitle}
@@ -83,9 +83,10 @@ function SpeciesCardBase({ species: s, layout = 'grid', className, index = 0 }: 
           imgClassName="group-hover:scale-105"
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-        <div className="absolute left-3 top-3">
+        {/* Sits above the card link so the status tooltip still gets hover; links to the same page. */}
+        <Link to={`/species/${s.id}`} tabIndex={-1} className="absolute left-3 top-3 z-10">
           <ConservationBadge status={s.conservation.status} compact />
-        </div>
+        </Link>
         <div className="absolute right-3 top-3 z-10 flex gap-1.5">
           <CompareButton id={s.id} variant="overlay" />
           <FavoriteButton id={s.id} variant="overlay" />
